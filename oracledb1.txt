@@ -1,0 +1,191 @@
+CREATE TABLE CUSTOMERS(
+
+CustomerID varchar2(25) PRIMARY KEY NOT NULL,
+FirstName varchar2(25) NOT NULL,
+LastName varchar2(25) NOT NULL,
+Address varchar2(50) NOT NULL,
+City varchar2(25) NOT NULL,
+PostalCode varchar2(25) NOT NULL,
+Country varchar2(25) NOT NULL,
+Phone varchar2(25) NOT NULL,
+Email varchar2(25) NOT NULL
+)
+
+INSERT INTO CUSTOMERS
+(CustomerID, FirstName, LastName, Address, City, PostalCode, Country, Phone, Email) 
+VALUES(12856856,'Tuğrul','Kaya','Barbaros Bulvarı No:13 Beşiktaş','İstanbul',34022,'Türkiye',56985236578,'tk@gmail.com');
+
+INSERT INTO CUSTOMERS 
+(CustomerID, FirstName, LastName, Address, City, PostalCode, Country, Phone, Email) 
+VALUES(65151584,'Ece','Kiraz','Ulubatlı Hasan Blv. No:10 Osmangazi','Bursa',16028,'Türkiye',52321516266,'kirazece@gmail.com');
+
+INSERT INTO CUSTOMERS 
+(CustomerID, FirstName, LastName, Address, City, PostalCode, Country, Phone, Email)
+VALUES(87486265,'Orkut','Kutlu','Eskikuyumcular Mh. Çankaya Sk. No:10,Balıkesir',7025,'Türkiye',53464257216,'orkutkutlu@yahoo.com');
+
+INSERT INTO CUSTOMERS 
+(CustomerID, FirstName, LastName, Address, City, PostalCode, Country, Phone, Email)
+VALUES(46202162,'Simge','Aylıkcı','Büyükşehir Mahallesi Enver Adakan Caddesi No:2 Beylikdüzü','İstanbul',34320,'Türkiye',53410310625,'simgeaylikci@outlook.com');
+
+INSERT INTO CUSTOMERS 
+(CustomerID, FirstName, LastName, Address, City, PostalCode, Country, Phone, Email) 
+VALUES(95623004,'Muhammed','Şentürk','Menderes Blv. No.349/A 53800 Merkez ','Rize',53520,'Türkiye',53130549494,'msenturk@gmail.com');
+
+INSERT INTO CUSTOMERS 
+(CustomerID, FirstName, LastName, Address, City, PostalCode, Country, Phone, Email) 
+VALUES(12325685,'Sibel','Ceylan','Dikmen Cad. No:12 Çankaya','Ankara',6550,'Türkiye',53241624614,'ceylaansibel@gmail.com');
+
+INSERT INTO CUSTOMERS
+(CustomerID, FirstName, LastName, Address, City, PostalCode, Country, Phone, Email)
+VALUES(46546846,'Mehmet Alp','Işık','Cengiz Topel Cd. No:36 K:1 D:1 Bostanlı Karşıyaka','İzmir',35650,'Türkiye',53162161219,'malp35@gmail.com');
+
+INSERT INTO CUSTOMERS 
+(CustomerID, FirstName, LastName, Address, City, PostalCode, Country, Phone, Email) 
+VALUES(84894516,'Deniz','Arda','Karanfil Sokak No: 5/15 Palmiye Apt. Güzeloba','Antalya',7255,'Türkiye',53708865272,'deniizarda@outlook.com');
+
+INSERT INTO CUSTOMERS 
+(CustomerID, FirstName, LastName, Address, City, PostalCode, Country, Phone, Email) 
+VALUES(46565150,'İrem','Özden','Dokuz Eylül Meydanı, No: 11, 35210, Basmane,İzmir',35250,'Türkiye',54201651464,'iremozden@yahoo.com');
+
+
+
+
+
+CREATE TABLE PRODUCT(
+
+ProductID int PRIMARY KEY NOT NULL,	
+ProductName	varchar2(25) NOT NULL,
+ProductDescription varchar2(25) NOT NULL,
+CategoryID	varchar2(25) NOT NULL,
+UnitPrice varchar(25) NOT NULL
+)
+
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (49852,'Elma','Meyve',1,5);
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (49851,'Armut','Meyve',1,6.25);
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (49850,'Çilek','Meyve',1,5.75);
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (49849,'Muz','Meyve',1,12.45);
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice)
+VALUES (49848,'Kivi','Meyve',1,8.75);	
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (49847,'Karpuz','Meyve',1,10.25);
+
+INSERT INTO
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice)
+VALUES (49846,'Kavun','Meyve',1,8.25);		
+
+INSERT INTO
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (45555,'Biber','Sebze',2,3.75);
+
+INSERT INTO
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice)
+VALUES (45554,'Salatalık','Sebze',2,2.75);		
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (45553,'Domates','Sebze',2,4.75);	
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (45552,'Havuç','Sebze',2,5.25);		
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (45551,'Patlıcan','Sebze',2,8.75);
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (45550,'Patates','Sebze',2,7.75);	
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (45549,'Soğan','Sebze',2,5.25);	
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (45548,'Kırmızı Biber','Sebze',2,8.25);
+
+INSERT INTO
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice)
+VALUES (40989,'Su1','1 Litre Su',3,1.75);	
+
+INSERT INTO
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (40988,'Su2','5 Litre Su',3,6.25);
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice)
+VALUES (40987,'Coca Cola','İçecek',3.5);	
+
+INSERT INTO
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice)
+VALUES (40986,'Fanta','İçecek',3,4.25);
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (40985,'Maden Suyu','İçecek',3,2.25);		
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (40984,'Meyve Suyu','İçecek',3,2);		
+
+INSERT INTO 
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (40983,'Süt','İçecek',3,3.75);
+
+INSERT INTO
+PRODUCT(ProductID, ProductName,  ProductDescription, CategoryID, UnitPrice) 
+VALUES (40982,'Enerji İçeceği','İçecek',3,5.75);
+
+
+CREATE TABLE CATEGORIES(
+
+CategoryID int PRIMARY KEY NOT NULL,
+CategoryName varchar2(25) NOT NULL,
+Description varchar2(25) NOT NULL
+
+CONSTRAINT fk_category 
+FOREIGN KEY (CategoryID) 
+REFERENCES PRODUCT(CategoryID);
+)
+
+INSERT INTO CATEGORY 
+(CategoryID, CategoryName, Description) 
+VALUES (1,'Meyve','Yiyecek');
+
+INSERT INTO CATEGORY 
+(CategoryID, CategoryName, Description)
+VALUES (2,'Sebze','Yiyecek');
+
+INSERT INTO CATEGORY 
+(CategoryID, CategoryName, Description) 
+VALUES (3,'İçecek','İçecek');
+
+CREATE PUBLIC SYNONYM cst1 CUSTOMERS
+SELECT * FROM cst1;
+
+CREATE VIEW sum_product AS 
+SELECT unitPrice * FROM PRODUCT 
+WHERE CategoryID = 1;
+
+
+
+
+
+
